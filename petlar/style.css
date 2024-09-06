@@ -1,0 +1,234 @@
+/* Fontes e Cores */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f7ed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #95d5b2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    }
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.logo{
+    max-width:35%;
+    max-height:35%;
+    width: auto;
+    height: auto;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content:center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #95d5b2;
+}
+
+.hero {
+    background: url('/imagens/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 106, 79, 0.7);
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.5em;
+    z-index: 2;
+    position: relative;
+    margin: 20px 0 0;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+section#about {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+section#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#animals {
+    background-color: #d8f3dc;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.animal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.animal {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.animal img {
+    max-width: 100%;
+    display: block;
+    border-bottom: 2px solid #2d6a4f;
+}
+
+.animal h3 {
+    background-color: #2d6a4f;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.animal p {
+    padding: 15px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1pc;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    }
+
+form button {
+    padding: 15px 30px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #40916c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2d6a4f;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do Botão de Contato via WhatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1da04d; /* Cor padrão do WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.whatsapp-button img {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    }
+
+.whatsapp-button:hover {
+    background-color: #128f80; /* Cor mais escura para o hover */
+    transform: scale(1.05);
+    border-image-width: auto;
+}

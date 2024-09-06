@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="/musicas/musica.mp3.mp3" type="audio/mpeg">
+      </audio>  
+      
+    <header>
+        <img class="logo" src="/imagens/petlar.png.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#animals">Animais</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <h2>Encontre o seu novo melhor amigo!</h2>
+        <p>Aqui você pode adotar cães e gatos que estão à espera de um lar.</p>
+    </section>
+
+    <section id="about">
+        <h2>Quem Somos?</h2>
+        <p>Detentores da causa animal, resgatamos, salvamos e tratamos de animais vitimas de abandono, maus tratos e acidentes; E tudo o que precisam é de um lar para que possam a partir daqui ter uma vida digna com ótimos tutores!</p>
+    </section>
+
+    <main>
+    <section id="animals">
+        <h2>Animais Disponíveis para Adoção</h2>
+        <div class="animal-list">
+            <div class="animal">
+                <img src="/imagens/dog1.jpg" alt="Cachorro 1">
+                <h3>Rex</h3>
+                <p>Idade: 2 anos</p>
+                <p>Personalidade: Brincalhão e carinhoso</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/cat1.jpg" alt="Gato 1">
+                <h3>Mimi</h3>
+                <p>Idade: 1 ano</p>
+                <p>Personalidade: Independente e carinhosa</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/cat2.jpg" alt="Gato 2">
+                <h3>Kiba</h3>
+                <p>Idade: 1 ano</p>
+                <p>Personalidade: Companheiro e calmo</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/dog2.png.png" alt="Cachorro 1">
+                <h3>Zeus</h3>
+                <p>Idade: 3 anos</p>
+                <p>Personalidade: Dorminhoco e comilão</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/dog3.png" alt="Cachorro 1">
+                <h3>Charles</h3>
+                <p>Idade: 5 anos</p>
+                <p>Personalidade: Alerta & Paciente</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/cat3.jpg" alt="Cachorro 1">
+                <h3>Boris</h3>
+                <p>Idade: 4 anos</p>
+                <p>Personalidade: Calmo & Independente</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/dog4.png" alt="Cachorro 1">
+                <h3>Jackson</h3>
+                <p>Idade: 8 meses</p>
+                <p>Personalidade: Fofinho & Barulhento</p>
+            </div>
+            <div class="animal">
+                <img src="/imagens/cat4.png" alt="Cachorro 1">
+                <h3>Hermano</h3>
+                <p>Idade: 2 anos</p>
+                <p>Personalidade: Aventureiro & Observador</p>
+            </div>
+            <!-- Adicione mais animais conforme necessário -->
+        </div>
+    </section>
+</main>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/mzzpjqrp" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" name="telefone" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <a href="https://wa.me/43999582033?text=Boa Tarde Gostaria de Adotar!" target="_blank" class="whatsapp-button">
+            <img src="/imagens/whatsapp-icon.png" alt="WhatsApp">
+            Contato pelo WhatsApp
+        </a>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PetLar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
